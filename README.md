@@ -1840,3 +1840,19 @@ If you discover a vulnerability, please see our [Security Policy](./SECURITY.md)
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=koala73/worldmonitor&type=Date&type=Date" />
  </picture>
 </a>
+
+## Docker Deployment (Community)
+
+> Note: This Docker setup serves the built frontend (SPA mode). API edge functions from Vercel are not included in this container.
+
+```bash
+docker compose up -d --build
+```
+
+Open: `http://localhost:5180`
+
+Stop:
+
+```bash
+docker compose down
+```

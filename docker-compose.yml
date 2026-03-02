@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  worldmonitor:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: worldmonitor
+    ports:
+      - "5180:80"
+    restart: unless-stopped
